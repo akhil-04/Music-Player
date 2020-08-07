@@ -1,0 +1,314 @@
+*{
+	margin: 0;
+}
+
+section{
+	margin: 1.4rem;
+}
+
+i{
+	color: #fff;
+}
+
+:root{
+	--bg-color:#0e122e;
+	--bg-color-input:#151c47;
+}
+
+body{
+	background-color: var(--bg-color);
+}
+
+/* Header  */
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 40px;
+	width: 100%;
+	box-sizing: border-box;
+	/*background-color: black;*/
+	/*border: 2px solid white;*/
+}
+
+header .logo{
+	color: #fff;
+	height: 50px;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 25px;
+	float: left;
+}
+
+header .logo img{
+	height: 130%;
+	width: 40%;
+}
+
+header .logo h5{
+	color: white;
+	height: 200px;
+	font-family: sans-serif;
+	display: inline-block;
+	position: absolute;
+	/*margin-bottom: 0rem;*/
+}
+
+#left{
+	float: left;
+}
+
+header nav{
+	float: right;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+	font-size: 1.5rem;
+	margin: 1rem;
+}
+
+header nav li a{
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+}
+
+header nav li a:hover{
+	text-decoration: underline;
+}
+
+header nav li input{
+	padding: 5px;
+	border-radius: 8px 8px 8px 8px;
+	width:15rem;
+	height: 1.5rem;
+	border:0;
+	background-color: var(--bg-color-input);
+}
+
+/*Main and aside positions*/
+main{
+	display: flex;
+	flex-direction: row;
+	margin: 6rem 4rem 0rem 4rem;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/*border: 2px solid white;*/
+}
+
+content{
+	width: 65%;
+	margin-right: 2rem;
+	/*border: 2px solid white;*/
+}
+aside{
+	width: 35%;
+	/*border: 2px solid white;*/
+}
+
+section{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.text{
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: white;
+	font-family: sans-serif;
+	margin-top: 120%;
+}
+
+.sub-text{
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 600;
+	font-family: monospace;
+}
+
+/*Slider*/
+
+#slider{
+	position: relative;
+	width: 100%;
+	height: 45vh;
+	min-height: 10rem;
+	/*border: 2px solid white;*/
+}
+.slider-image1{
+	height: 100%;
+	width:45vh;
+	position: absolute;
+	left: 60%;
+	transition: 0.4s;
+}
+.slider-image2{
+	height: 100%;
+	width:45vh;
+	position: absolute;
+	transition: 0.4s;
+	z-index: 1;
+}
+.slider-image3{
+	height: 100%;
+	width:45vh;
+	left: 30%;
+	position: absolute;
+	transition: 0.4s;
+	z-index: 2;
+}
+
+#slider img{
+	width:400px;
+	height: 200px;
+}
+#slider img:hover{
+	width:500px;
+	height:300px;
+}
+
+/*#img1{
+	height:75%;
+	top:13%;
+}*/
+/*#img2{
+	left: 20%;
+	z-index:1;
+	box-shadow: 1px 4px 8px 1px black;
+}
+#img3{
+	height: 75%;
+	left: 50%;
+	top:13%;
+}*/
+
+/*Latest Releases*/
+
+
+#latest-releases{
+	height: 15rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 0rem;
+	/*border: 2px solid white;*/
+}
+
+.latest-releases-songs{
+	display: flex;
+	flex-direction: row;
+	width: 45%;
+	height: 45%;
+	/*border: 2px solid white;*/
+}
+
+.img-container{
+	position: relative;
+	height: 6rem;
+	width:7rem;
+}
+
+.play-btn{
+	display: none;
+	position: absolute;
+	color: white;
+	left: 45%;
+	top:45%;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.img-container:hover .play-btn{
+	display: block;
+}
+.img-container:hover{
+	opacity: 0.7;
+	box-shadow: 0 0 5px #fff;
+}
+
+.latest-releases-songs img{
+	height: 100%;
+	width: 100%;
+}
+.latest-releases-songs .title{
+	margin: 1rem;
+	line-height: 1.5rem;
+}
+
+span{
+	font-color:white;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+
+.latest-releases-songs .time{
+	color: white;
+	margin-left: auto;
+}
+
+@media screen and (max-width: 750px){
+	#latest-releases{
+		height: 30rem;
+	}
+	.latest-releases-songs{
+	width: 90%;
+	height: 20%;
+}
+
+/* popular artists */
+
+#popular-artists{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 1rem;
+	height: 9rem;
+	width: 100%; 
+}
+
+.singers{
+	display: flex;
+	flex-direction:column;
+	width: 20%;
+	min-width: 6rem;
+}
+
+.round-image-container{
+	position: relative;
+	border-radius: 50%;
+	height: 70%;
+	width: 90%;
+	box-shadow: 1px 2px 2px 1px black;
+}
+
+.round-image-container:hover .play-btn{
+	display: block;
+}
+
+.round-image-container:hover{
+	opacity: 0.7;
+	box-shadow: 0 0 5px #fff;
+}
+
+.round-image{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.singers p{
+	text-align: center;
+}
